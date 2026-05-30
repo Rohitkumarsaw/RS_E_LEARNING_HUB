@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RS E-LEARNING HUB — Personal Learning Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Glowing Space Nebula Auras (Hardware Accelerated GPU Nebulae) -->
+  <div class="nebula-glow-container">
+    <div class="nebula-glow-1"></div>
+    <div class="nebula-glow-2"></div>
+    <div class="nebula-glow-3"></div>
+  </div>
+
+  <!-- Cybernetic Digital Grid Blueprint -->
+  <div class="cyber-grid"></div>
+
+  <!-- Cosmic Star Rain Background -->
+  <div class="star-rain-container">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
+
+  <!-- App Shell Container -->
+  <div class="app-shell">
+
+    <!-- ═══════════════════════════════════════════ SIDEBAR NAVIGATION (Desktop) ═══ -->
+    <aside class="sidebar-nav" id="sidebarNav">
+      <div class="sidebar-header">
+        <div class="brand">
+          <div class="brand-mark">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 2L28 8V24L16 30L4 24V8L16 2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M16 8L22 11V17L16 20L10 17V11L16 8Z" fill="currentColor" opacity="0.5"/>
+              <circle cx="16" cy="14" r="2.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="brand-name">RS E-LEARNING HUB</span>
+        </div>
+        <button class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Toggle Sidebar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+            <path d="M15 18l-6-6 6-6" id="toggleIconPath"/>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Desktop Sidebar Links -->
+      <nav class="sidebar-links" id="mainNav">
+        <button class="nav-link active" data-section="dashboard">
+          <span class="nav-icon">📊</span> <span class="nav-text">Dashboard</span>
+        </button>
+        <button class="nav-link" data-section="courses">
+          <span class="nav-icon">📚</span> <span class="nav-text">Courses</span>
+        </button>
+        <button class="nav-link" data-section="resources">
+          <span class="nav-icon">📁</span> <span class="nav-text">Resources</span>
+        </button>
+        <button class="nav-link" data-section="notes">
+          <span class="nav-icon">📝</span> <span class="nav-text">Notes</span>
+        </button>
+        <button class="nav-link" data-section="progress">
+          <span class="nav-icon">📈</span> <span class="nav-text">Progress</span>
+        </button>
+        <button class="nav-link" data-section="about">
+          <span class="nav-icon">✨</span> <span class="nav-text">About</span>
+        </button>
+        <button class="nav-link" data-section="settings">
+          <span class="nav-icon">⚙️</span> <span class="nav-text">Settings</span>
+        </button>
+      </nav>
+
+      <!-- Sidebar User Profile Info -->
+      <div class="sidebar-profile" id="sidebarProfileBtn" role="button" tabindex="0">
+        <div class="sidebar-avatar">
+          <span id="sidebarAvatarInitials">RK</span>
+        </div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-username" id="sidebarUsername">Loading…</div>
+          <div class="sidebar-role">Self-learner</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Overlay slide-in drawer for mobile menu -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <aside class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-header">
+        <span class="brand-name">RS E-LEARNING HUB</span>
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <button class="nav-link active" data-section="dashboard">Dashboard</button>
+        <button class="nav-link" data-section="courses">Courses</button>
+        <button class="nav-link" data-section="resources">Resources</button>
+        <button class="nav-link" data-section="notes">Notes</button>
+        <button class="nav-link" data-section="progress">Progress</button>
+        <button class="nav-link" data-section="about">About</button>
+        <button class="nav-link" data-section="settings">Settings</button>
+      </nav>
+    </aside>
+
+    <!-- ═══════════════════════════════════════════ MAIN WORKSPACE ═══ -->
+    <div class="main-workspace">
+
+      <!-- TOP BAR -->
+      <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+          <!-- Desktop Header Brand -->
+          <div class="desktop-header-brand">
+            <div class="brand-mark">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L28 8V24L16 30L4 24V8L16 2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <path d="M16 8L22 11V17L16 20L10 17V11L16 8Z" fill="currentColor" opacity="0.5"/>
+                <circle cx="16" cy="14" r="2.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="brand-name">RS E-LEARNING HUB</span>
+          </div>
+
+          <!-- Desktop Horizontal Navigation Links -->
+          <nav class="desktop-nav-links" id="desktopNav">
+            <button class="nav-link active" data-section="dashboard">
+              <span class="nav-icon">📊</span> <span class="nav-text">Dashboard</span>
+            </button>
+            <button class="nav-link" data-section="courses">
+              <span class="nav-icon">📚</span> <span class="nav-text">Courses</span>
+            </button>
+            <button class="nav-link" data-section="resources">
+              <span class="nav-icon">📁</span> <span class="nav-text">Resources</span>
+            </button>
+            <button class="nav-link" data-section="notes">
+              <span class="nav-icon">📝</span> <span class="nav-text">Notes</span>
+            </button>
+            <button class="nav-link" data-section="progress">
+              <span class="nav-icon">📈</span> <span class="nav-text">Progress</span>
+            </button>
+            <button class="nav-link" data-section="about">
+              <span class="nav-icon">✨</span> <span class="nav-text">About</span>
+            </button>
+            <button class="nav-link" data-section="settings">
+              <span class="nav-icon">⚙️</span> <span class="nav-text">Settings</span>
+            </button>
+          </nav>
+
+          <div class="mobile-header-brand">
+            <span class="brand-name">RS E-LEARNING HUB</span>
+          </div>
+
+          <div class="header-actions">
+            <!-- Premium Search Bar -->
+            <div class="search-wrapper">
+              <svg class="search-icon" viewBox="0 0 20 20" fill="none">
+                <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M15 15L12.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <input type="search" id="globalSearch" class="search-input" placeholder="Search courses…" autocomplete="off" />
+              <kbd class="search-kbd">/</kbd>
+            </div>
+            
+            <!-- Quick Action buttons -->
+            <button class="avatar-btn" id="profileBtn" aria-label="Profile">
+              <span id="avatarInitials">RK</span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN CONTENT BODY -->
+      <main class="main-content" id="mainContent">
+
+        <!-- ─── DASHBOARD SECTION ─── -->
+        <section class="section active" id="sectionDashboard" data-section="dashboard">
+          <div class="container">
+
+            <!-- Premium 2-Column Hero Card -->
+            <div class="hero-block glass-shine neon-border">
+              <div class="hero-content">
+                <div class="hero-text">
+                  <p class="hero-eyebrow" id="heroGreeting">Good morning</p>
+                  <h1 class="hero-title" id="heroName">Loading…</h1>
+                  <p class="hero-sub" id="heroSub">Your learning journey at a glance</p>
+                </div>
+                <div class="hero-cta">
+                  <button class="btn btn-primary btn-glow" id="continueBtn">Continue Learning →</button>
+                </div>
+              </div>
+              <div class="hero-visual">
+                <!-- Premium Cyber Interactive SVG Artwork -->
+                <svg class="hero-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="var(--accent-c)" />
+                      <stop offset="50%" stop-color="var(--accent-a)" />
+                      <stop offset="100%" stop-color="var(--accent-b)" />
+                    </linearGradient>
+                    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feGaussianBlur stdDeviation="8" result="blur" />
+                      <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                  </defs>
+                  <!-- Animated background shapes -->
+                  <circle cx="100" cy="100" r="70" stroke="url(#cyberGrad)" stroke-width="1" stroke-dasharray="4 4" opacity="0.3" class="spin-slow" />
+                  <rect x="50" y="50" width="100" height="100" rx="20" stroke="url(#cyberGrad)" stroke-width="1.5" opacity="0.5" class="spin-reverse" />
+                  <!-- Pulsing nodes -->
+                  <circle cx="100" cy="100" r="15" fill="url(#cyberGrad)" filter="url(#neonGlow)" class="pulse-glow" />
+                  <circle cx="45" cy="45" r="5" fill="var(--accent-b)" filter="url(#neonGlow)" />
+                  <circle cx="155" cy="155" r="6" fill="var(--accent-c)" filter="url(#neonGlow)" />
+                  <circle cx="155" cy="45" r="4" fill="var(--accent-e)" filter="url(#neonGlow)" />
+                  <!-- Connecting visual data paths -->
+                  <path d="M45 45L85 85" stroke="var(--border)" stroke-width="1" stroke-dasharray="2 2" />
+                  <path d="M155 155L115 115" stroke="var(--border)" stroke-width="1" stroke-dasharray="2 2" />
+                  <path d="M155 45L115 85" stroke="var(--border)" stroke-width="1" stroke-dasharray="2 2" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Bento-ready Stats Grid -->
+            <div class="stats-grid" id="statsGrid">
+              <!-- Rendered by progress.js -->
+            </div>
+
+            <!-- Filter row chips -->
+            <div class="filter-row" id="filterRow">
+              <span class="filter-label">Filter:</span>
+              <div class="filter-chips" id="filterChips">
+                <!-- Rendered by app.js -->
+              </div>
+            </div>
+
+            <!-- Featured Course Block -->
+            <div class="featured-block" id="featuredBlock">
+              <!-- Rendered by courses.js -->
+            </div>
+
+            <!-- All Courses Grid -->
+            <div class="section-header">
+              <h2 class="section-title">All Courses</h2>
+              <span class="course-count" id="courseCount"></span>
+            </div>
+            <div class="courses-grid" id="coursesGrid">
+              <!-- Rendered by courses.js -->
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ─── COURSES SECTION ─── -->
+        <section class="section" id="sectionCourses" data-section="courses">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Courses Library</h2>
+            </div>
+            <div class="filter-row">
+              <div class="filter-chips" id="courseFilterChips"></div>
+            </div>
+            <div class="courses-grid" id="coursesGridFull">
+              <!-- Rendered by courses.js -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── COURSE DETAIL SECTION ─── -->
+        <section class="section" id="sectionCourseDetail" data-section="courseDetail">
+          <div class="container">
+            <button class="back-btn" id="backFromDetail">
+              <svg viewBox="0 0 20 20" fill="none" width="16" height="16">
+                <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Back to Courses
+            </button>
+            <div id="courseDetailContent">
+              <!-- Rendered by courses.js -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── RESOURCES SECTION ─── -->
+        <section class="section" id="sectionResources" data-section="resources">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Resources Hub</h2>
+              <p class="section-desc">All your files, notes, and reference materials in one place.</p>
+            </div>
+            <div id="resourcesOverview">
+              <!-- Rendered by resources.js -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── NOTES SECTION ─── -->
+        <section class="section" id="sectionNotes" data-section="notes">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Notes Hub</h2>
+              <p class="section-desc">All your lecture notes, summaries, and cheatsheets in one place.</p>
+            </div>
+            <div id="notesOverview">
+              <!-- Rendered by notes.js -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── PROGRESS SECTION ─── -->
+        <section class="section" id="sectionProgress" data-section="progress">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Progress Tracker</h2>
+            </div>
+            <div id="progressContent">
+              <!-- Rendered by progress.js -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── ABOUT SECTION ─── -->
+        <section class="section" id="sectionAbout" data-section="about">
+          <div class="container">
+            <div class="about-block glass-shine neon-border">
+              <div class="about-icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                  <path d="M16 2L28 8V24L16 30L4 24V8L16 2Z" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="16" cy="14" r="4" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <h2 class="about-title">RS E-LEARNING HUB</h2>
+              <p class="about-desc">A premium personal learning portal built to help you manage, organize, and track your self-study journey. Everything you learn, in one beautiful place.</p>
+              <div class="about-meta">
+                <span class="meta-pill">Version 1.0</span>
+                <span class="meta-pill">Personal Use</span>
+                <span class="meta-pill">Vanilla JS</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── SETTINGS SECTION ─── -->
+        <section class="section" id="sectionSettings" data-section="settings">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Settings & Profile</h2>
+            </div>
+            <div id="settingsContent">
+              <!-- Rendered by app.js -->
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <span class="footer-brand">RS E-LEARNING HUB</span>
+          <span class="footer-copy">Personal Learning Portal · Cyber Neon Edition</span>
+          <span class="footer-copyright">© 2026 RS E-LEARNING HUB. All rights reserved.</span>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- ═══════════════════════════════════════════ MOBILE BOTTOM NAVIGATION ═══ -->
+    <nav class="mobile-bottom-nav">
+      <button class="mobile-bottom-link nav-link active" data-section="dashboard">
+        <span class="bottom-icon">📊</span>
+        <span class="bottom-label">Dashboard</span>
+      </button>
+      <button class="mobile-bottom-link nav-link" data-section="courses">
+        <span class="bottom-icon">📚</span>
+        <span class="bottom-label">Courses</span>
+      </button>
+      <button class="mobile-bottom-link nav-link" data-section="resources">
+        <span class="bottom-icon">📁</span>
+        <span class="bottom-label">Resources</span>
+      </button>
+      <button class="mobile-bottom-link nav-link" data-section="notes">
+        <span class="bottom-icon">📝</span>
+        <span class="bottom-label">Notes</span>
+      </button>
+      <button class="mobile-bottom-link nav-link" data-section="progress">
+        <span class="bottom-icon">📈</span>
+        <span class="bottom-label">Progress</span>
+      </button>
+      <button class="mobile-bottom-link nav-link" data-section="settings">
+        <span class="bottom-icon">⚙️</span>
+        <span class="bottom-label">Settings</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════ SCRIPTS ═══ -->
+  <!-- Course Database Nodes -->
+  <script src="js/category.js"></script>
+  <script src="js/data/course_c1.js"></script>
+  <script src="js/data/course_c2.js"></script>
+  <script src="js/data/course_c3.js"></script>
+  <script src="js/data/course_c4.js"></script>
+  <script src="js/data/course_c5.js"></script>
+  <script src="js/data/course_c6.js"></script>
+
+  <!-- Core Logic Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/resources.js"></script>
+  <script src="js/notes.js"></script>
+  <script src="js/courses.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RS E-LEARNING HUB — Blueprint Template</title>
+
+  <!-- ═══════════════════════════════════════════ STYLES & FONTS ═══ -->
+  
+  <!-- Premium Google Fonts (Orbitron, Roboto, JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Core Stylesheet (Cyber Neon Glassmorphic design tokens & responsive components) -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Glowing Space Nebula Auras (Hardware Accelerated GPU Nebulae Background) -->
+  <div class="nebula-glow-container">
+    <div class="nebula-glow-1"></div>
+    <div class="nebula-glow-2"></div>
+    <div class="nebula-glow-3"></div>
+  </div>
+
+  <!-- Cybernetic Digital Grid Blueprint -->
+  <div class="cyber-grid"></div>
+
+  <!-- Cosmic Star Rain Background -->
+  <div class="star-rain-container">
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+  </div>
+
+  <!-- App Shell Blueprint Layout (Header, collapsible Sidebar, and main workspace) -->
+  <div class="app-shell">
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar-nav" id="sidebarNav">
+      <div class="sidebar-header">
+        <div class="brand">
+          <div class="brand-mark">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 2L28 8V24L16 30L4 24V8L16 2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M16 8L22 11V17L16 20L10 17V11L16 8Z" fill="currentColor" opacity="0.5"/>
+              <circle cx="16" cy="14" r="2.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="brand-name">RS E-LEARNING HUB</span>
+        </div>
+        <button class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Toggle Sidebar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+            <path d="M15 18l-6-6 6-6" id="toggleIconPath"/>
+          </svg>
+        </button>
+      </div>
+      
+      <nav class="sidebar-links" id="mainNav">
+        <!-- Links go here -->
+      </nav>
+    </aside>
+
+    <!-- Main Content Workspace -->
+    <div class="main-workspace">
+      <!-- Your Custom Dashboard, Course Details, or Page Content goes here -->
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════ JAVASCRIPT SCRIPTS ═══ -->
+  
+  <!-- 
+    Step 1: Load Course Databases
+    These append individual course details to the global window.CourseList array.
+  -->
+  <script src="js/category.js"></script>
+  <script src="js/data/course_c1.js"></script> <!-- Course 1: Ads add in website -->
+  <script src="js/data/course_c2.js"></script> <!-- Course 2: App Publish on Play Store -->
+  <script src="js/data/course_c3.js"></script> <!-- Course 3: UI Design Fundamentals -->
+  <script src="js/data/course_c4.js"></script> <!-- Course 4: Python for Data Science -->
+  <script src="js/data/course_c5.js"></script> <!-- Course 5: Productivity Systems -->
+  <script src="js/data/course_c6.js"></script> <!-- Course 6: AI Engineering Fundamentals -->
+
+  <!-- 
+    Step 2: Core Logic Modules
+    AppData dynamically aggregates all window.CourseList items on load.
+  -->
+  <script src="js/data.js"></script>      <!-- App Data Aggregator -->
+  <script src="js/ui.js"></script>        <!-- UI Core Utilities (Escaping, Sidebar control) -->
+  <script src="js/theme.js"></script>     <!-- Dark Cyber Neon Theme Enforcer -->
+  <script src="js/progress.js"></script>  <!-- Course & video stats tracker -->
+  <script src="js/resources.js"></script> <!-- Resource hub download list engine -->
+  <script src="js/notes.js"></script>     <!-- Notes Hub rendering engine -->
+  <script src="js/courses.js"></script>   <!-- Course cards grid & Cinema Playlist overlay -->
+  <script src="js/app.js"></script>       <!-- Core Controller & Event binding orchestrator -->
+
+</body>
+</html>

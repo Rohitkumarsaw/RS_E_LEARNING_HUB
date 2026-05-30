@@ -1,0 +1,80 @@
+(function() {
+  window.CourseList = window.CourseList || [];
+  window.CourseList.push({
+    id: 'c2',
+    slug: 'App Publish on Play Store',
+    title: 'App Publish on Play Store',
+    subtitle: 'App Making And Successfully Publish On Play Store',
+    description: 'From zero to Successfully Publish app on play store.',
+    category: window.AppCategories.c2,
+    level: 'intermediate',
+    duration: '1h 13m 38s',
+    thumbnail: '#',
+    banner: '',
+    tags: ['App', 'Play Store'],
+    featured: false,
+    progress: 30,
+    videos: [
+      {
+        id: 'v2-1',
+        title: 'Part 01 _ Mobile Se Play Store App Publish Full Process _ App create and Host online(1080P_HD)',
+        description: '',
+        duration: '16:13',
+        source: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Lecture/Part 01 _ Mobile Se Play Store App Publish Full Process _ App create and Host online(1080P_HD).mp4',
+        thumbnail: '',
+        watched: true,
+      },
+      {
+        id: 'v2-2',
+        title: 'Part 02 _ Mobile Se Play Store App Publish Full Process _ Sketchware Se APK_ Signed APK _ AAB(1080P_HD)',
+        description: '',
+        duration: '27:09',
+        source: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Lecture/Part 02 _ Mobile Se Play Store App Publish Full Process _ Sketchware Se APK_ Signed APK _ AAB(1080P_HD).mp4',
+        thumbnail: '',
+        watched: true,
+      },
+      {
+        id: 'v2-3',
+        title: 'Part 03 _ Mobile Se Play Store App Publish Full Process (No PC_Laptop) _(1080P_HD)',
+        description: '',
+        duration: '16:48',
+        source: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Lecture/Part 03 _ Mobile Se Play Store App Publish Full Process (No PC_Laptop) _(1080P_HD).mp4',
+        thumbnail: '',
+        watched: false,
+      },
+      {
+        id: 'v2-4',
+        title: 'Part 04 _ Upload AAB on Play Store _ Get Testers Easily (Mobile Only _ Full Step-by-Step Guide)(1080P_HD)',
+        description: '',
+        duration: '13:28',
+        source: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Lecture/Part 04 _ Upload AAB on Play Store _ Get Testers Easily (Mobile Only _ Full Step-by-Step Guide)(1080P_HD).mp4',
+        thumbnail: '',
+        watched: false,
+      },
+    ],
+    notes: [],
+    resources: [
+      {
+        id: 'r2-1',
+        title: 'Apps',
+        description: '',
+        files: [
+          { id: 'f2-1-1', name: 'Hopweb', type: 'apk', path: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Apps/com.venter.hopweb_2.7.4_xlhs.com (1).apk', size: '84.3 MB', label: 'Download' },
+          { id: 'f2-1-2', name: 'Sketchware Pro', type: 'apk', path: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Apps/Sketchware.Pro.v6.4.0-rc05-minApi26 (1).apk', size: '113 MB', label: 'Download' },
+        ],
+      },
+      {
+        id: 'r2-2',
+        title: 'Documentation & Specs',
+        description: 'Reference documents and API specifications.',
+        files: [
+          { id: 'f2-2-1', name: 'NotesApp_Ui_Universal_prompt', type: 'zip', path: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Resources/NotesApp_Ui_Universal_prompt.zip', size: '6.08 KB', label: 'Download' },
+          { id: 'f2-2-2', name: 'onbackPressed__ addSource directly', type: 'txt', path: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Resources/onbackPressed__ addSource directly.txt', size: '75 B', label: 'Open' },
+          { id: 'f2-2-3', name: 'oncreate__ add source directly', type: 'txt', path: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Resources/oncreate__ add source directly.txt', size: '3.11 KB', label: 'open' },
+          { id: 'f2-2-4', name: 'privacy policy prompt', type: 'txt', path: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Resources/privacy policy prompt.txt', size: '4.13 KB', label: 'open' },
+          { id: 'f2-2-5', name: 'termux_commands', type: 'txt', path: 'D:/My Courses And Imp data/Full Stack Web Development/Ai Tricker/App Publish on Play Store/Resources/termux_commands.txt', size: '357 B', label: 'open' },
+        ],
+      },
+    ],
+  });
+})();

@@ -1,0 +1,103 @@
+(function() {
+  window.CourseList = window.CourseList || [];
+  window.CourseList.push({
+    id: 'c5',
+    slug: 'productivity-systems',
+    title: 'Productivity Systems',
+    subtitle: 'Building Deep Work Habits & Personal Knowledge Management',
+    description: 'A practical guide to building sustainable productivity systems. Covers time blocking, deep work methodology, Zettelkasten note-taking, building a personal knowledge base, GTD workflow, and habit formation science.',
+    category: window.AppCategories.c5,
+    level: 'beginner',
+    duration: '16h 45m',
+    thumbnail: '#',
+    banner: '',
+    tags: ['Productivity', 'PKM', 'Deep Work', 'GTD', 'Habits'],
+    featured: false,
+    progress: 100,
+    videos: [
+      {
+        id: 'v5-1',
+        title: 'The Science of Deep Work',
+        description: "Cal Newport's framework applied to self-study.",
+        duration: '28:00',
+        source: 'files/videos/c5/01-deep-work.mp4',
+        thumbnail: '',
+        watched: true,
+      },
+      {
+        id: 'v5-2',
+        title: 'Time Blocking Mastery',
+        description: 'Designing a daily schedule that protects deep work time.',
+        duration: '22:30',
+        source: 'files/videos/c5/02-time-blocking.mp4',
+        thumbnail: '',
+        watched: true,
+      },
+      {
+        id: 'v5-3',
+        title: 'Zettelkasten Note-taking',
+        description: 'Building a personal knowledge management system.',
+        duration: '35:15',
+        source: 'files/videos/c5/03-zettelkasten.mp4',
+        thumbnail: '',
+        watched: true,
+      },
+      {
+        id: 'v5-4',
+        title: 'GTD — Getting Things Done',
+        description: 'Capture, clarify, organize, reflect, engage.',
+        duration: '24:00',
+        source: 'files/videos/c5/04-gtd.mp4',
+        thumbnail: '',
+        watched: true,
+      },
+    ],
+    notes: [
+      {
+        id: 'n5-1',
+        title: 'Deep Work Action Plan',
+        type: 'pdf',
+        file: 'files/notes/c5/deep-work-plan.pdf',
+        size: '120 KB',
+        description: 'Personalized plan for implementing deep work habits.',
+      },
+      {
+        id: 'n5-2',
+        title: 'Weekly Review Template',
+        type: 'doc',
+        file: 'files/notes/c5/weekly-review.docx',
+        size: '44 KB',
+        description: 'Weekly review checklist and reflection template.',
+      },
+      {
+        id: 'n5-3',
+        title: 'Habit Tracker Notes',
+        type: 'md',
+        file: 'files/notes/c5/habit-tracker.md',
+        size: '20 KB',
+        description: 'Notes on habit formation and streak tracking.',
+      },
+    ],
+    resources: [
+      {
+        id: 'r5-1',
+        title: 'Templates & Worksheets',
+        description: 'Ready-to-use templates for implementing the systems.',
+        files: [
+          { id: 'f5-1-1', name: 'Weekly Planning Template', type: 'doc', path: 'files/docs/c5/weekly-plan.docx', size: '48 KB', label: 'Open' },
+          { id: 'f5-1-2', name: 'Zettelkasten Starter Kit', type: 'zip', path: 'files/zips/c5/zettelkasten-kit.zip', size: '1.2 MB', label: 'Download' },
+          { id: 'f5-1-3', name: 'GTD Reference Sheets', type: 'pdf', path: 'files/pdfs/c5/gtd-reference.pdf', size: '180 KB', label: 'Open' },
+        ],
+      },
+      {
+        id: 'r5-2',
+        title: 'Recommended Tools',
+        description: 'Apps and tools for building your system.',
+        files: [
+          { id: 'f5-2-1', name: 'Obsidian PKM Tool', type: 'link', path: 'https://obsidian.md/', size: 'External', label: 'Visit' },
+          { id: 'f5-2-2', name: 'Todoist Task Manager', type: 'link', path: 'https://todoist.com/', size: 'External', label: 'Visit' },
+        ],
+      },
+    ],
+  });
+})();
